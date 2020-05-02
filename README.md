@@ -153,10 +153,11 @@ See : [etcs/reference.md](./etcs/reference.md)
 
 
 # My environment
-OS: Ubuntu16.04.1
-GPU: GTX1080
-CUDA8.0, cuDNN6.0
-nvidia_smi
+- OS: Ubuntu16.04.1
+- GPU: GTX1080
+- CUDA8.0, cuDNN6.0
+- nvidia_smi
+'''
 Sat May  2 11:15:51 2020
 +-----------------------------------------------------------------------------+
 | NVIDIA-SMI 384.130                Driver Version: 384.130                   |
@@ -177,9 +178,10 @@ Sat May  2 11:15:51 2020
 |    0      2527      G   ...AAAAAAAAAAAACAAAAAAAAAA= --shared-files   175MiB |
 |    0     20420      C   python3                                      113MiB |
 +-----------------------------------------------------------------------------+
+'''
+- others→pip3_list
 
-others→pip3_list
-
-https://qiita.com/shiooon/items/535f588bea7748e156f2
+- reference
+- https://qiita.com/shiooon/items/535f588bea7748e156f2
 
 
