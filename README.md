@@ -1,3 +1,31 @@
+# My environment
+OS: Ubuntu16.04.1
+GPU: GTX1080
+CUDA8.0, cuDNN6.0
+nvidia_smi
+Sat May  2 11:15:51 2020
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 384.130                Driver Version: 384.130                   |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  GeForce GTX 1080    Off  | 00000000:01:00.0  On |                  N/A |
+| 24%   41C    P8    14W / 180W |   1363MiB /  8110MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|    0      1054      G   /usr/lib/xorg/Xorg                           709MiB |
+|    0      1980      G   compiz                                       361MiB |
+|    0      2527      G   ...AAAAAAAAAAAACAAAAAAAAAA= --shared-files   175MiB |
+|    0     20420      C   python3                                      113MiB |
++-----------------------------------------------------------------------------+
+
+others→pip3_list
+
 # tf-pose-estimation
 
 'Openpose', human pose estimation algorithm, have been implemented using Tensorflow. It also provides several variants that have some changes to the network structure for **real-time processing on the CPU or low-power embedded devices.**
@@ -63,7 +91,7 @@ Alternatively, you can install this repo as a shared package using pip.
 ```bash
 $ git clone https://www.github.com/ildoonet/tf-pose-estimation
 $ cd tf-pose-estimation
-$ python setup.py install  # Or, `pip install -e .`
+$ python3 setup.py install  # Or, `pip install -e .`
 ```
 
 ## Models & Performances
@@ -93,7 +121,8 @@ $ bash download.sh
 You can test the inference feature with a single image.
 
 ```
-$ python run.py --model=mobilenet_thin --resize=432x368 --image=./images/p1.jpg
+$ python3 run.py --model=mobilenet_thin --resize=432x368 --image=./images/p1.jpg
+$ python3 run3d.py --model=mobilenet_thin --image=images/abc.jpg
 ```
 
 The image flag MUST be relative to the src folder with no "~", i.e:
@@ -149,3 +178,7 @@ See : [etcs/training.md](./etcs/training.md)
 ## References
 
 See : [etcs/reference.md](./etcs/reference.md)
+
+https://qiita.com/shiooon/items/535f588bea7748e156f2
+
+
